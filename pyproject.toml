@@ -1,0 +1,23 @@
+[project]
+name = "advanced-machine-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.1",
+    "modal-python>=0.4.2.1",
+    "pydantic>=2.10.6",
+    "river>=0.22.0",
+    "ruff>=0.11.2",
+    "scikit-activeml>=0.6.0",
+    "scikit-learn>=1.6.1",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.6",
+]
