@@ -647,14 +647,14 @@ def main():
     model = ImageCaptioningModel(vocab_size).to(device)
 
     # Loss and optimizer
-    # criterion = nn.CrossEntropyLoss(reduction="none")
-    # optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
+    criterion = nn.CrossEntropyLoss(reduction="none")
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
 
-    # # Train model
-    # train_model(model, dataloader, criterion, optimizer, epochs=30, vocab_size=vocab_size, vocabulary=dataset.vocab)
+    # Train model
+    train_model(model, dataloader, criterion, optimizer, epochs=30, vocab_size=vocab_size, vocabulary=dataset.vocab)
 
-    # # Save model
-    # torch.save(model.state_dict(), "image_captioning_model.pth")
+    # Save model
+    torch.save(model.state_dict(), "image_captioning_model.pth")
 
     model.load_state_dict(torch.load("image_captioning_model.pth"))
 
