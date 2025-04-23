@@ -8,6 +8,7 @@ dependencies = [
     "ipykernel>=6.29.5",
     "matplotlib>=3.10.1",
     "modal-python>=0.4.2.1",
+    "opencv-python>=4.11.0.86",
     "pydantic>=2.10.6",
     "river>=0.22.0",
     "ruff>=0.11.2",
